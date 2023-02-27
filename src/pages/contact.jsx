@@ -25,13 +25,13 @@ const Contact = () => {
     return (
         <>
         <Box width="100%" height="100%" minHeight="700px" overflow="hidden">
-            <Box position="relative" zIndex="99999" mt="6rem" ml="9rem" width="650px">
-                <Box fontSize="60px" color="#e3f2ee">Contact us today:</Box>
+            <Box position="relative" zIndex="99999" mt="6rem" ml="9rem" width="650px" >
+                <Box fontSize="60px" color="#e3f2ee" style={{animation: "fadeInUp 1.4s 0.8s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}}>Contact us today:</Box>
                 <form ref={form} onSubmit={sendEmail}>
-                    <TextField id="filled-basic" name="to_name" style={{width:"43%",backgroundColor:"#e3f2ee"}} label="Name" variant="filled" />
-                    <TextField id="filled-basic" name="from_name" style={{marginLeft:"1rem",width:"54%",backgroundColor:"#e3f2ee"}} label="Your Email" variant="filled" />
+                    <TextField id="filled-basic" name="to_name" style={{width:"43%",backgroundColor:"#e3f2ee",animation: "fadeInUp 1s 0.4s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}} label="Name" variant="filled" />
+                    <TextField id="filled-basic" name="from_name" style={{marginLeft:"1rem",width:"54%",backgroundColor:"#e3f2ee", animation: "fadeInUp 1s 0.4s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}} label="Your Email" variant="filled" />
                     <Box height={10}/>
-                    <TextField id="filled-basic" name="subject" style={{width:"100%",backgroundColor:"#e3f2ee"}} label="Subject" variant="filled" />
+                    <TextField id="filled-basic" name="subject" style={{width:"100%",backgroundColor:"#e3f2ee", animation: "fadeInUp 1.1s 0.5s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}} label="Subject" variant="filled" />
                     <Box height={10}/>
                     <TextField
                         id="filled-multiline-static"
@@ -40,10 +40,10 @@ const Contact = () => {
                         rows={4}
                         variant="filled"
                         name="message"
-                        style={{width:"100%",backgroundColor:"#e3f2ee"}}
+                        style={{width:"100%",backgroundColor:"#e3f2ee",animation: "fadeInUp 1.3s 0.6s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}}
                         />
                     <Box height={10}/>
-                    <Button type="submit" value="SEND" style={{width:"100.3%",marginLeft:"-0.10rem",paddingTop:"8px",paddingBottom:"8px", backgroundColor:"#2e7c67"}} variant="contained">Send</Button>
+                    <Button type="submit" value="SEND" style={{width:"100.3%",marginLeft:"-0.10rem",paddingTop:"8px",paddingBottom:"8px", backgroundColor:"#2e7c67", animation: "fadeInUp 1.5s 0.9s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}} variant="contained">Send</Button>
                 </form>
                 
             </Box>

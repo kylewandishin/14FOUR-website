@@ -5,6 +5,7 @@ import "./app.scss"
 import { Box } from '@mui/system';
 import { Routes, Route } from 'react-router-dom'
 import Topbar from './components/topbar';
+import PageNotFound from './pages/pageNotFound';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/about" element={<About/>}/>
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
       </Box>
   );

@@ -3,24 +3,28 @@ import logo from "../assets/14.png"
 import transp from '../assets/green.png'
 import web from "../assets/web.png"
 import phone from "../assets/phone.png"
+import Loader from 'react-loaders';
 const Home = () => {
     return (
+    <>
     <Box className='container' width="100%" height="100%" backgroundColor="#2A2A2E">
         <Box justifyContent="space-between" width="100%" height="600px" display="flex" fontSize="30px" color="#ddd" sx={{background : "linear-gradient(240deg, #2e7c67 21%, #1e5245 93.4%);)"}}>
             <Box ml="10%" mt="9%" width="390px" fontSize="64px" lineHeight="50px">
+                <Box style={{animation: "fadeInUp 0.8s 0s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}}>
                 Software dev done right at
-                <Box display="flex" mt="8px">
-                <img src={transp} style={{marginLeft:"-3px"}} width="77px" height="77px"/>
-                <Box fontSize="78px" mt="9px" ml="0px" color="#0f2922">14FOUR <Box color="#dbf5ee" ml="5px" mt="-42px">14FOUR</Box></Box>
                 </Box>
-                <Box fontSize="26px" mt="10px" lineHeight="22px">
+                <Box display="flex" mt="8px">
+                <img src={transp} style={{marginLeft:"-3px",animation: "fadeInLeft 0.8s 0.2s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}} width="77px" height="77px"/>
+                <Box fontSize="78px" mt="9px" ml="0px" color="#0f2922" style={{animation: "fadeInDown 0.8s 0.2s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}}>14FOUR <Box color="#dbf5ee" ml="5px" mt="-42px">14FOUR</Box></Box>
+                </Box>
+                <Box fontSize="26px" mt="10px" lineHeight="22px" style={{animation: "fadeInUp 0.8s 0s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}}>
                 Get your website made for you with efficency and quality. Contact us today
                 </Box>
             </Box>
             <Box mr="10%">
-                <img src={web} width="300px"/>
+                <img src={web} width="300px" style={{animation: "fadeInUp 0.8s 0s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}}/>
                 <Box mt="-200px" ml="-100px">
-                <img src={phone} width="200px"/>
+                <img src={phone} width="200px" style={{animation: "fadeInRight 0.8s 0.1s", "animation-fill-mode": "forwards", opacity: 0, clear: "both"}}/>
                 </Box>
             </Box>
             
@@ -44,6 +48,7 @@ const Home = () => {
         
         </Box>
     </Box>
+    </>
     );
 }
  
